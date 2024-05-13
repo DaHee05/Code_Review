@@ -1,0 +1,17 @@
+print("세 자리수 두개를 입력하시오.")
+a = int(input())
+b = int(input())
+
+c = b%10          # 1의 자리
+d = (b//10)%10    # 10의 자리
+e = b//100        # 100의 자리
+
+a1 = c*a
+a2 = d*a
+a3 = e*a
+a4 = a1 + a2*10 + a3*100
+
+print(a1)
+print(a2)
+print(a3)
+print(a4)
