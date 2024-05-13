@@ -1,0 +1,8 @@
+import datetime
+h, m = input("시간과 분을 입력하세요\n").split()
+h = int(h)
+m = int(m)
+t1 = datetime.timedelta(hours=h, minutes=m)
+t2 = datetime.timedelta(hours=0, minutes=45)
+result = str(t1 - t2).split(":")
+print(result[0], result[1])
