@@ -1,0 +1,12 @@
+from datetime import datetime
+now = datetime.now()
+h = now.hour
+m = now.minute
+print(h, m)
+cook_time = int(input("요리하는데 필요한 시간(분)을 입력하시오 \n"))
+if(m+cook_time>59):
+  h = h+1
+  m = m + cook_time - 60
+else:
+  m = m + cook_time
+print("완료시간: ", h, m)
